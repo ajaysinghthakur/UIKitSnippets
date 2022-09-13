@@ -32,11 +32,11 @@ lazy var myTextField: UITextField = {
 	let textField = UITextField()
 	textField.font = UIFont(name: <#font name#>, size: 17)
 	textField.borderStyle = .roundedRect
-	textField.backgroundColor = .blackExtra
+	textField.backgroundColor = UIColor.black
 	
-	textField.layerCornerRadius = 6
-	textField.borderWidth = 1
-	textField.borderColor = .darkGray
+	textField.layer.cornerRadius = 6
+	textField.layer.borderWidth = 1
+	textField.layer.borderColor = UIColor.darkGray.cgColor
 	
 	return textField
 }()
